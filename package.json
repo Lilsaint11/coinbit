@@ -15,12 +15,15 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "firebase": "^10.1.0",
+    "js-cookie": "^3.0.5",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "recharts": "^2.7.2",
+    "recoil": "^0.7.7",
     "swiper": "^10.0.4",
     "tailwindcss": "3.3.3"
   }

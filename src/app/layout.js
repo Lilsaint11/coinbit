@@ -1,8 +1,13 @@
+"use client";
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from './components/navbar'
+import Navbar from './navbar'
 import Footer from './components/footer'
 import Sidebar from './components/sidebar'
+import {app} from ".//firebase"
+import {
+  RecoilRoot,
+} from 'recoil';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,14 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-full absolute top-5  px-28 z-50 ">
-          {/*<Navbar />*/}
+      <RecoilRoot>
+        <div className="w-full absolute top-5  px-24 z-50 ">
+         <Navbar />
         </div>
-        <div className='flex'>
-          <Sidebar />
+        <div className=''>
           {children}
         </div>
-         {/*<Footer />*/}
+         <Footer />
+        </RecoilRoot>
       </body>
     </html>
   )

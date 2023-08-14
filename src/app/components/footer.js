@@ -26,13 +26,13 @@ const Footer = () => {
                     <Link href="/about"><p>About</p></Link>
                     <Link href="/contact"><p>Contact</p></Link>
                     <Link href="/pricing"><p>Pricing</p></Link>
-                    <p>Pathners</p>
+                    <p className='cursor-pointer'>Pathners</p>
                 </div>
                 <div className="flex flex-col gap-5 text-[12px]">
-                    <p  className='flex gap-1'><AiFillFacebook className="text-lg text-blue-800"/>Facebook</p>
-                    <p className='flex gap-1'><FaTelegram className="text-lg text-blue-800"/>Telegram</p>
-                    <p className='flex gap-1'><IoLogoWhatsapp  className="text-lg text-green-800"/>Whatsapp</p>
-                    <p className='flex gap-1'><AiFillInstagram className="text-lg text-red-600"/>Instagram</p>
+                    <p  className='flex gap-1 cursor-pointer'><AiFillFacebook className="text-lg text-blue-800"/>Facebook</p>
+                    <p className='flex gap-1 cursor-pointer'><FaTelegram className="text-lg text-blue-800"/>Telegram</p>
+                    <p className='flex gap-1 cursor-pointer'><IoLogoWhatsapp  className="text-lg text-green-800"/>Whatsapp</p>
+                    <p className='flex gap-1 cursor-pointer'><AiFillInstagram className="text-lg text-red-600"/>Instagram</p>
                 </div>
             </div>
             <p className='flex items-center'><AiOutlineCopyright /> 2022 coinbit. All rights reserved</p>

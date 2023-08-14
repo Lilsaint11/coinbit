@@ -5,7 +5,7 @@ import { IoLogoWhatsapp} from 'react-icons/io';
 
 const Contact = () => {
     return ( 
-        <div  className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 pt-28 flex items-center justify-center text-white pl-72 h-screen">{/*pl-72 h-screen*/ }
+        <div  className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 pt-28 flex items-center justify-center text-white h-screen">{/*pl-72 h-screen*/ }
             <div className="w-1/2">
                 <h3 className="text-4xl mb-2">Contact Us</h3>
                 <p className="text-slate-300 text-[13px] text-left mb-5">Let's connect.We are here to help, and we'd love to hear from you! Whether you have a question, a comment,or inquiry about the platform, you can reach out to us through the contact form on this page or by email or social media.</p>

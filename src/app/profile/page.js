@@ -1,6 +1,6 @@
 const Profile = () => {
     return ( 
-        <div  className="pl-80 bg-gradient-to-tl from-blue-900 to-black px-28 w-full h-screen">
+        <div  className=" bg-gradient-to-tl from-blue-900 to-black px-28 w-full pb-5">
             <div className="pt-20 flex flex-col items-center gap-5 justify-center mb-10">
                 <h3 className=" text-white text-6xl font-semibold">Edit Profile</h3>
                 <form action="" className=" w-full px-5 flex flex-col gap-5 justify-center text-white">
