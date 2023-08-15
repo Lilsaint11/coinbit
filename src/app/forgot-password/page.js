@@ -1,7 +1,7 @@
 'use client';
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useState } from "react";
-import { Link } from "next/navigation";
+import Link from "next/link";
 
 
 
@@ -27,7 +27,7 @@ const ForgotPassword = () => {
         <div className="bg-blue-950 w-[800px] h-[450px] rounded-xl mt-10  shadow shadow-slate-800 flex overflow-hidden">
             <div  className="w-1/2 flex flex-col justify-center items-center text-white py-5">
                 <h2 className="text-2xl font-semibold">Forgot Password</h2>
-                <p className="text-[13px] mt-3">Remembered your password? <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 cursor-pointer ">Signin</span></p>
+               <Link href="/signin"> <p className="text-[13px] mt-3">Remembered your password? <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-500 cursor-pointer ">Signin</span></p></Link>
                 <form action="" className=" w-full px-5 flex flex-col gap-5 justify-center mt-5" onSubmit={onSubmit}>
                     <input
                      type="email" 

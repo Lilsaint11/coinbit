@@ -31,7 +31,7 @@ const SignIn = () => {
             }
         } catch (error) {
             console.log("Invalid user credentials",error)
-            alert("error")
+            alert("Invalid user credentials")
         }
     }
     

@@ -5,6 +5,7 @@ import { getAuth, createUserWithEmailAndPassword,updateProfile } from "firebase/
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 import {db} from "../firebase"
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie"
 
 const SignUp = () => {
     const router = useRouter();
@@ -13,10 +14,11 @@ const SignUp = () => {
         firstName: "",
         lastName: "",
         email: "",
-        password: ""
+        password: "",
+        confirmPassword:""
     });
 
-    const {firstName,lastName,email, password} = formData;
+    const {firstName,lastName,email, password,confirmPassword} = formData;
 
     function onChange(e){
         setFormData((prevState) => ({
@@ -28,16 +30,21 @@ const SignUp = () => {
         e.preventDefault()
         //add user to database
         try {
-            const auth = getAuth();
-            const userCredential =await createUserWithEmailAndPassword(auth,email,password);
-            updateProfile(auth.currentUser,{
-                displayName: firstName
-            })
-            const user = userCredential.user
-            const formDataCopy = {...formData}
-            formDataCopy.timestamp = serverTimestamp();
-            await setDoc(doc(db,"users", user.uid),formDataCopy);
-            router.push("/dashboard")
+            if(password === confirmPassword){
+                const auth = getAuth();
+                const userCredential =await createUserWithEmailAndPassword(auth,email,password,confirmPassword);
+                updateProfile(auth.currentUser,{
+                    displayName: firstName
+                })
+                const user = userCredential.user
+                const formDataCopy = {...formData}
+                formDataCopy.timestamp = serverTimestamp();
+                await setDoc(doc(db,"users", user.uid),formDataCopy);
+                Cookies.set("loggedin", true);
+                router.push("/dashboard")
+            }else{
+                alert("password no mash")
+            }
         } catch (error) {
           alert("something went wrong with the registration")
         }
@@ -54,7 +61,7 @@ const SignUp = () => {
                         <input type="text" placeholder="Last Name" value={lastName} onChange={onChange} id="lastName" className="bg-transparent border-b-[1px] w-full text-[13px] focus:outline-none py-3"/>
                         <input type="email" placeholder="Email" value={email} onChange={onChange} id="email"  className="bg-transparent border-b-[1px] w-full text-[13px] focus:outline-none py-3"/>
                         <input type="password" placeholder="Password" value={password} id="password" onChange={onChange} className="bg-transparent border-b-[1px] w-full text-[13px] focus:outline-none py-3"/>
-                        <input type="password" placeholder="Confirm Password"  className="bg-transparent border-b-[1px] w-full text-[13px] focus:outline-none py-3"/>
+                        <input type="password" placeholder="Confirm Password" value={confirmPassword} id="confirmPassword" onChange={onChange} className="bg-transparent border-b-[1px] w-full text-[13px] focus:outline-none py-3"/>
                         <button className=" w-full bg-gradient-to-tl from-blue-900 to-sky-500 h-12 rounded-full shadow-sm shadow-slate-800">Sign Up</button>
                     </form>
                 </div>
