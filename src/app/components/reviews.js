@@ -18,7 +18,7 @@ export default function Reviews() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={20}
         centeredSlides={false}
         slidesPerGroupSkip={1}

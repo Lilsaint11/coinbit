@@ -21,7 +21,7 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Affordable pocket size</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>No investment bonus</p></span>
                     </div>
-                    <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button>
+                    <Link href="/paymentDetails/250"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
                 <div className='flex flex-col gap-3 bg-white p-5 rounded-lg shadow-md shadow-slate-500'>
                     <div className=''>
@@ -35,7 +35,7 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Most popular investment</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>$20 investment bonus</p></span>
                     </div>
-                    <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-12 font-semibold text-[13px]">Invest Plan</button>
+                    <Link href="/paymentDetails/1200"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-12 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
                 <div className='flex flex-col gap-3 bg-white p-5 rounded-lg'>
                     <div className=''>
@@ -49,7 +49,7 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Big investors size</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>$50 investment bonus</p></span>
                     </div>
-                    <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button>
+                    <Link href="/paymentDetails/2500"> <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
             </div>
             <div className='text-white mt-20 flex gap-40 items-center'>

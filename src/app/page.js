@@ -19,7 +19,7 @@ export default function Home() {
   },[auth])
   return (
     <>
-      <main className='relative'>
+      <main className='relative bg-[url("/mainbg.png")] max-[610px]:bg-[url("/smallbg.png")] max-[610px]:bg-bottom bg-contain '>
       <img
         src="/mainbg.png"
         alt="main bg"
@@ -27,7 +27,7 @@ export default function Home() {
         priority
       />
       <div className='z-10 pt-5'>
-        <div className={`px-28 ${user && "px-24"}`}>
+        <div className={`px-28 max-[720px]:px-10 max-[660px]:px-5 ${user && "px-24"}`}>
           <Hero />
         </div>
        <Body />

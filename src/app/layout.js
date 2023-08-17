@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <RecoilRoot>
-        <div className="w-full absolute top-5  px-24 z-50 ">
+        <div className="w-full absolute top-5  px-24 max-[875px]:px-10 max-[700px]:px-5 max-[420px]:pl-0   z-50 ">
          <Navbar />
         </div>
         <div className=''>
