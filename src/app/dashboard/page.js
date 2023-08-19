@@ -40,37 +40,37 @@ export default async function Dashboard () {
     return ( 
       <>
       {cryptoResults ? (
-        <div className=" bg-gradient-to-tl from-blue-900 to-black text-white pb-10 pt-24 flex flex-col justify-center items-center gap-5 px-24">
+        <div className=" bg-gradient-to-tl from-blue-900 to-black text-white pb-10 pt-24 flex flex-col justify-center items-center gap-5 px-24 max-[900px]:px-10 max-[752px]:px-5 ">
             <div className="w-full">
                 <div>
                     <h3 className="text-xl">Balance Overview</h3>
                     <p className="text-[12px] text-slate-500">monitor how your investment is working</p>
                 </div>
-                <div className="flex gap-10 mt-5">
-                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 gap-3">
+                <div className="flex gap-10 max-[800px]:gap-5 mt-5">
+                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 max-[580px]:pl-2   gap-3">
                         <span className="flex gap-1 items-center">
-                            <GiTakeMyMoney className="text-4xl"/>
-                            <p className="text-[15px]">Amount Invested</p>
+                            <GiTakeMyMoney className="text-4xl max-[800px]:text-2xl"/>
+                            <p className="text-[15px] max-[800px]:text-[13px]">Amount Invested</p>
                         </span>
-                        <h2 className="text-4xl font-semibold ">$1200.00</h2>
+                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold ">$1200.00</h2>
                     </div>
-                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 gap-3">
+                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 max-[580px]:pl-2 gap-3">
                         <span className="flex gap-1 items-center">
-                            <TbMoneybag className="text-4xl"/>
-                            <p className="text-[15px]">Expected Returns</p>
+                            <TbMoneybag className="text-4xl max-[800px]:text-2xl"/>
+                            <p className="text-[15px] max-[800px]:text-[13px]">Expected Returns</p>
                         </span>
-                        <h2 className="text-4xl font-semibold">$3000.00</h2>
+                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold">$3000.00</h2>
                     </div>
-                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 gap-3">
+                    <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 max-[580px]:pl-2 gap-3">
                         <span className="flex gap-1 items-center">
-                            <FcMoneyTransfer className="text-4xl"/>
-                            <p className="text-[15px]">Amount Withdrawn</p>
+                            <FcMoneyTransfer className="text-4xl max-[800px]:text-2xl"/>
+                            <p className="text-[15px] max-[800px]:text-[13px]">Amount Withdrawn</p>
                         </span>
-                        <h2 className="text-4xl font-semibold">$0.00</h2>
+                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold">$0.00</h2>
                     </div>
                 </div>
             </div>
-            <div className="bg-slate-200 w-full h-[400px] flex justify-center items-center rounded-xl">
+            <div className="bg-slate-200 w-full h-[400px] flex justify-center items-center rounded-xl pl-8">
              <Chart graphData = {graphData}/>
             </div>
             <div className="w-full">

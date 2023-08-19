@@ -50,7 +50,7 @@ const data = [
 const Chart = ({graphData}) => {
     return ( 
         <AreaChart
-        width={950}
+        width={window.screen.width - 230}
         height={400}
         data={graphData}
         margin={{
@@ -61,8 +61,8 @@ const Chart = ({graphData}) => {
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Date" />
-        <YAxis />
+        {/*<XAxis dataKey="Date" />
+        <YAxis />*/}
         <Tooltip />
         <Area type="monotone" dataKey="Price" stroke="#8884d8" fill="#8884d8" />
       </AreaChart>

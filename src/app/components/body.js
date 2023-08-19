@@ -55,7 +55,7 @@ const Body = () => {
             </div>
             <div className=" w-full flex flex-col justify-center items-center gap-5 mt-10">
                 <p className="text-xl">Our company Pathners</p>
-                <div className="flex max-[550px]:flex-wrap justify-between w-full">
+                <div className="flex max-[550px]:flex-wrap justify-between w-full gap-2">
                     <img src="/btc.png" alt="btc" className="w-28 max-[720px]:w-20  max-[720px]:h-8 h-10"/>
                     <img src="eth.png" alt="eth" className="w-28 max-[720px]:w-20  max-[720px]:h-8 h-10"/>
                     <img src="lite.png" alt="lite" className="w-28 max-[720px]:w-20  max-[720px]:h-8 h-10"/>

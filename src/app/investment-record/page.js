@@ -8,9 +8,9 @@ import TableRow from "@mui/material/TableRow";
 
 const InvestmentRecord = () => {
     return ( 
-        <div className="pt-20 bg-gradient-to-tl from-blue-900 to-black px-28 w-full h-screen">
+        <div className="pt-20 bg-gradient-to-tl from-blue-900 to-black px-28 max-[900px]:px-10 max-[752px]:px-5 w-full h-screen">
              <div className="pt-20 flex flex-col items-center gap-5 justify-center mb-10">
-                <h3 className=" text-white text-6xl font-semibold">Investment Record</h3>
+                <h3 className=" text-white text-6xl max-[785px]:text-5xl max-[550px]:text-4xl font-semibold text-center">Investment Record</h3>
                 <p className="text-center text-[14px] text-slate-400">Track your investments record to see how much you have come</p>
             </div>
             <TableContainer>
