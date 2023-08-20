@@ -27,5 +27,8 @@
     "recoil": "^0.7.7",
     "swiper": "^10.0.4",
     "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "encoding": "^0.1.13"
   }
 }
