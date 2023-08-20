@@ -88,19 +88,19 @@ export default async function Dashboard () {
               </TableHead>
               <TableBody className="text-white">
               {cryptoResults.map((result) => (
-                  <TableRow>
+                  <TableRow key={result.symbol}>
                     <TableCell className="text-white">{result.market_cap_rank} </TableCell>
-                <TableCell className="text-white">
-                    <div  className="flex items-center gap-2">
-                        <img src={result.image} alt="" className="w-8"/> 
-                        {result.symbol}
-                    </div>    
-                </TableCell>
-                <TableCell className="text-white">${result.current_price} </TableCell>
-                <TableCell className="text-white">{result.total_volume} </TableCell>
-                <TableCell className="text-white">${result.market_cap} </TableCell>
-                <TableCell className={`text-green-500 ${(result.price_change_percentage_24h < 0) && "text-red-500"}`}>{(result.price_change_percentage_24h).toFixed(2)}% </TableCell>
-                    </TableRow>
+                    <TableCell className="text-white">
+                        <div  className="flex items-center gap-2">
+                            <img src={result.image} alt="" className="w-8"/> 
+                            {result.symbol}
+                        </div>    
+                    </TableCell>
+                    <TableCell className="text-white">${result.current_price} </TableCell>
+                    <TableCell className="text-white">{result.total_volume} </TableCell>
+                    <TableCell className="text-white">${result.market_cap} </TableCell>
+                    <TableCell className={`text-green-500 ${(result.price_change_percentage_24h < 0) && "text-red-500"}`}>{(result.price_change_percentage_24h).toFixed(2)}% </TableCell>
+                  </TableRow>
                   )    
                  )}
               </TableBody>
