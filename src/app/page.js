@@ -19,7 +19,7 @@ export default function Home() {
   },[auth])
   return (
     <>
-      <main className='relative bg-[url("/mainbg.png")] max-[610px]:bg-[url("/smallbg.png")] max-[610px]:bg-bottom bg-contain overflow-hidden'>
+      <main className='relative bg-[url("/mainbg.png")] max-[610px]:bg-[url("/smallbg.png")] max-[610px]:bg-bottom bg-contain'>
       <img
         src="/mainbg.png"
         alt="main bg"
