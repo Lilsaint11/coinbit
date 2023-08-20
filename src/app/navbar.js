@@ -30,7 +30,7 @@ const Navbar = () => {
         router.push("/");
     }
     return ( 
-        <div className="text-white flex justify-between items-center z-50 overflow-hidden">
+        <div className="text-white flex justify-between items-center z-50 ">
             <Link href="/">
                 <div className="flex items-center">
                     <img
