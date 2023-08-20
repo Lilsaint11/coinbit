@@ -50,7 +50,7 @@ const data = [
 const Chart = ({graphData}) => {
     return ( 
         <AreaChart
-        width={window.screen.width - 230}
+        width={350}
         height={400}
         data={graphData}
         margin={{
