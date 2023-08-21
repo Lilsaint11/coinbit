@@ -9,8 +9,10 @@ import Cookies from "js-cookie";
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { AiOutlineClose } from 'react-icons/ai'
 
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
+    const pathname = usePathname()
     const [user, setUser] = useRecoilState(userState);
     const [showMenu,setShowMenu] = useState(false);
     const auth = getAuth()
@@ -29,6 +31,9 @@ const Navbar = () => {
         Cookies.remove("loggedin");
         router.push("/");
     }
+    useEffect(()=>{
+        setShowMenu(false);
+    },[pathname])
     return ( 
         <div className="text-white flex justify-between items-center z-50 ">
             <Link href="/">
