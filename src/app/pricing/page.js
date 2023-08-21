@@ -3,7 +3,7 @@ import { BsCheck2All } from 'react-icons/bs';
 
 const Pricing = () => {
     return ( 
-        <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5 pt-20">{/*pl-64*/ }
+        <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5 pt-20 text-black">{/*pl-64*/ }
             <div className="flex flex-col items-center gap-5 justify-center pt-10">{/*pt-10 */ }
                 <h3 className=" text-white text-6xl max-[610px]:text-5xl max-[350px]:text-4xl font-semibold">Pricing plans</h3>
                 <p className="text-center text-[14px] max-[350px]:text-[12px] text-slate-400">Our pricing plans are designed to be affordable,flexible and tailored to fit into the pockets of people</p>

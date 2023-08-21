@@ -7,7 +7,7 @@ const PaymentDetails = () => {
     let btc = 29418.60
     let amtConversion = (params.price/btc).toFixed(4)
     return ( 
-        <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5  pt-20 flex items-center justify-center">
+        <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5  pt-20 flex items-center justify-center text-black">
             <div className="bg-white rounded-xl p-5 max-[450px]:p-3 w-[500px] ">
                 <div className="flex flex-col gap-5">
                     <h3 className="font-bold text-xl">Commencing Transaction...</h3>
