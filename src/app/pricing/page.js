@@ -13,7 +13,7 @@ const Pricing = () => {
                     <div className=''>
                         <h3 className='text-2xl font-semibold mb-1'>Basic</h3>
                         <p className='text-[13px]'>Low budget investment</p>
-                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg'>$200</h3>
+                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg text-black'>$200</h3>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>100% Returns</p></span>
