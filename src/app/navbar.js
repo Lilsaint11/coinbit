@@ -41,7 +41,7 @@ const Navbar = () => {
                     <p className="text-2xl max-[360px]:text-xl max-[310px]:text-[15px] font-serif">CoinBit</p>
                 </div>
             </Link>
-            <div className={`flex gap-10 max-[720px]:text-[13px] transition duration-200 ${!showMenu ? "max-[810px]:absolute max-[810px]:flex-col -right-[100vw]" : "z-10 flex-col absolute -top-5 right-0 p-5 pt-8 h-56 bg-white text-black w-36 rounded-sm"} ${user && "text-[12px] max-[810px]:h-96 "}`}>
+            <div className={`flex gap-10 max-[720px]:text-[13px] transition duration-200 ${!showMenu ? "max-[810px]:absolute max-[810px]:flex-col right-0 hidden" : "z-10 flex-col absolute -top-5 right-0 visible p-5 pt-8 h-56 bg-white text-black w-36 rounded-sm"} ${user && "text-[12px] max-[810px]:h-96 "}`}>
                {user && (
                 <>
                 <Link href="/dashboard"><p className={` cursor-pointer`}>Dashboard</p></Link>
