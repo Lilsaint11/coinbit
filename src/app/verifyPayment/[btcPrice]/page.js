@@ -1,10 +1,16 @@
 "use client"
 import { useParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 const VerifyPayment = () => {
     const params = useParams()
+    const router = useRouter()
     function copy(val){
         navigator.clipboard.writeText(val);
         alert("copied")
+    }
+    function verify(){
+        alert("Wait while we confirm your transaction...")
+        router.push("/dashboard")
     }
     return ( 
         <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5 pt-20 flex items-center justify-center text-black">
@@ -32,7 +38,7 @@ const VerifyPayment = () => {
                         <input type="text" className="border border-slate-500 p-2 rounded-md w-full" />
                     </div>
                 </div>
-              <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 flex w-full justify-center rounded-full">Verify Payment</button>
+              <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 flex w-full justify-center rounded-full" onClick={verify}>Verify Payment</button>
                 </div>
             </div>
         </div>
