@@ -12,16 +12,16 @@ const PaymentDetails = () => {
                 <div className="flex flex-col gap-5">
                     <h3 className="font-bold text-xl">Commencing Transaction...</h3>
                     <div className="flex gap-5 items-center">
-                        <h4 className="max-[450px]:text-[13px]">Amount to deposit :</h4>
+                        <h4 className="max-[450px]:text-[13px]">Amount to deposit(Proposed) :</h4>
                         <h4 className="font-bold">${params.price} USD({amtConversion} BTC)</h4>
                     </div>
                     <div  className="flex gap-5 items-center">
                         <h4 className="max-[450px]:text-[13px]">Total Fees :</h4>
-                        <h4 className="font-bold">$20 USD</h4>
+                        <h4 className="font-bold">$10 USD</h4>
                     </div>
                     <div  className="flex gap-5 items-center">
                         <h4 className="max-[450px]:text-[13px]">Sum Total :</h4>
-                        <h4 className="font-bold">${parseInt(params.price) + 20} USD</h4>
+                        <h4 className="font-bold">${parseInt(params.price) + 10} USD</h4>
                     </div>
                     <div  className="flex gap-5 items-center">
                         <h4 className="max-[450px]:text-[13px]">Proposed Transaction Duration :</h4>

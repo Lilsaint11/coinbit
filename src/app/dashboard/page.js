@@ -52,14 +52,14 @@ export default async function Dashboard () {
                             <GiTakeMyMoney className="text-4xl max-[800px]:text-2xl"/>
                             <p className="text-[15px] max-[800px]:text-[13px]">Amount Invested</p>
                         </span>
-                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold ">$1200.00</h2>
+                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold ">$0.00</h2>{/*1200*/}
                     </div>
                     <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 max-[580px]:pl-2 gap-3">
                         <span className="flex gap-1 items-center">
                             <TbMoneybag className="text-4xl max-[800px]:text-2xl"/>
                             <p className="text-[15px] max-[800px]:text-[13px]">Expected Returns</p>
                         </span>
-                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold">$3000.00</h2>
+                        <h2 className="text-4xl max-[950px]:text-3xl max-[752px]:text-xl font-semibold">$0.00</h2>{/*3000*/}
                     </div>
                     <div className="bg-white text-black w-72 h-28 rounded-lg flex flex-col justify-center pl-5 max-[580px]:pl-2 gap-3">
                         <span className="flex gap-1 items-center">

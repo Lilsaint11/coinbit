@@ -4,6 +4,7 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import Link from "next/link";
 
 
 const InvestmentRecord = () => {
@@ -13,7 +14,9 @@ const InvestmentRecord = () => {
                 <h3 className=" text-white text-6xl max-[785px]:text-5xl max-[550px]:text-4xl font-semibold text-center">Investment Record</h3>
                 <p className="text-center text-[14px] text-slate-400">Track your investments record to see how much you have come</p>
             </div>
-            <TableContainer>
+            <h3 className="text-white">No investments yet...</h3>
+           <h3 className="text-white">Click <Link href="/pricing"> <span className="underline text-slate-400">here</span></Link> to invest</h3>
+          {/*  <TableContainer>
             <Table sx={{ minWidth: 650 }} size="small" aria-label="Vendors Table">
               <TableHead>
                 <TableRow >
@@ -44,7 +47,7 @@ const InvestmentRecord = () => {
                     </TableRow>    
               </TableBody>
             </Table>
-          </TableContainer>
+          </TableContainer>*/}
         </div>
      );
 }

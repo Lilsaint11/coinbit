@@ -2,23 +2,28 @@
 import { useParams } from 'next/navigation'
 const VerifyPayment = () => {
     const params = useParams()
+    function copy(val){
+        navigator.clipboard.writeText(val);
+        alert("copied")
+    }
     return ( 
         <div className="bg-gradient-to-tl from-blue-900 to-black pb-10 px-28 max-[610px]:px-20 max-[472px]:px-10 max-[390px]:px-5 pt-20 flex items-center justify-center text-black">
             <div className="bg-white rounded-xl p-5 w-[500px] ">
             <div className="flex flex-col gap-5">
                 <h3 className="font-bold text-xl">Transaction Verification</h3>
                 <div>
-                    <h4 className="font-semibold text-sm">one time secure BTC Address</h4>
+                    <h4 className="font-semibold text-sm">one time secure BTC Address(TRC20)</h4>
                     <div className="flex gap-3 items-center">
-                        <input type="text" value="k3j34k422jlj2kuh2lijku6hkuh6i5jij65iuygjghhiukyhkkjhkuh" className="border border-slate-500 p-2 rounded-md w-full"/>
-                        <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 h-10 rounded-md text-sm">Copy</button>
+                        <input type="text" value="TAR6PjVthQGP3sbfg5wzXtXigwFdCY6ga9" className="border border-slate-500 p-2 rounded-md w-full"/>
+                        <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 h-10 rounded-md text-sm" onClick={()=>copy("TAR6PjVthQGP3sbfg5wzXtXigwFdCY6ga9")}>Copy</button>
                     </div>
+                    <h4 className="font-semibold text-[10px] text-red-500">please ensure you send to <span className='font-bold'>TRC20</span>  blckchain to prevent loss of funds</h4>
                 </div>
                 <div  className="">
                     <h4  className="font-semibold text-sm">BTC Amount</h4>
                     <div className="flex gap-3 items-center">
                     <input type="text" value={params.btcPrice} className="border border-slate-500 p-2 rounded-md w-full"/>
-                    <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 h-10 rounded-md text-sm">Copy</button>
+                    <button className="bg-gradient-to-tl from-blue-900 to-black text-white p-2 h-10 rounded-md text-sm"  onClick={()=>copy(params.btcPrice)}>Copy</button>
                     </div>
                 </div>
                 <div>

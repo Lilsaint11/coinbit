@@ -13,7 +13,7 @@ const Pricing = () => {
                     <div className=''>
                         <h3 className='text-2xl font-semibold mb-1'>Basic</h3>
                         <p className='text-[13px]'>Low budget investment</p>
-                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg text-black'>$200</h3>
+                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg text-black'>$50</h3>{/*$200*/}
                     </div>
                     <div className='flex flex-col gap-3'>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>100% Returns</p></span>
@@ -21,13 +21,13 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Affordable pocket size</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>No investment bonus</p></span>
                     </div>
-                    <Link href="/paymentDetails/250"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
+                    <Link href="/paymentDetails/50"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
                 <div className='flex flex-col max-[825px]:w-full gap-3 bg-white p-5 rounded-lg shadow-md shadow-slate-500'>
                     <div className=''>
                         <h3 className='text-2xl font-semibold mb-1'>Standard</h3>
                         <p className='text-[13px] '>Most popular investment</p>
-                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg'>$1200</h3>
+                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg'>$100</h3> {/*$1200*/}
                     </div>
                     <div className='flex flex-col gap-5'>
                         <span className='flex items-center gap-2 '><BsCheck2All /><p>200% Returns</p></span>
@@ -35,13 +35,13 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Most popular investment</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>$20 investment bonus</p></span>
                     </div>
-                    <Link href="/paymentDetails/1200"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-12 font-semibold text-[13px]">Invest Plan</button></Link>
+                    <Link href="/paymentDetails/100"><button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-12 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
                 <div className='flex flex-col max-[825px]:w-full gap-3 bg-white p-5 rounded-lg'>
                     <div className=''>
                         <h3 className='text-2xl font-semibold mb-1'>Premium</h3>
                         <p className='text-[13px] '>Big investors investment</p>
-                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg'>$2500</h3>
+                        <h3 className='text-5xl p-3 shadow-sm shadow-slate-400 my-3 w-72 max-[1100px]:w-60 max-[910px]:w-52 max-[825px]:w-full max-[910px]:text-4xl rounded-lg'>$200</h3>{/*$2500*/}
                     </div>
                     <div className='flex flex-col gap-3'>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>300% Returns</p></span>
@@ -49,7 +49,7 @@ const Pricing = () => {
                         <span className='flex items-center gap-2'><BsCheck2All /><p>Big investors size</p></span>
                         <span className='flex items-center gap-2'><BsCheck2All /><p>$50 investment bonus</p></span>
                     </div>
-                    <Link href="/paymentDetails/2500"> <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
+                    <Link href="/paymentDetails/200"> <button className="bg-blue-900 p-3 w-full rounded-lg text-white mt-5 font-semibold text-[13px]">Invest Plan</button></Link>
                 </div>
             </div>
             <div className='text-white mt-20 flex  max-[715px]:flex-col  gap-40 max-[860px]:gap-20 max-[775px]:gap-10 max-[970px]:justify-center items-center'>
